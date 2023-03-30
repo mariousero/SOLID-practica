@@ -33,3 +33,4 @@ El problema es solucionado al añadir el método "getSize()" a cada tipo de arch
 
 ### Observaciones
 - En la clase "FileManager" deja de ser necesario el método "calculateSize", puesto que se ha implementado un método "getSize()" en la clase "Directory". Una vez aplicado este cambio, este método deja de ser útil, ya que su única función era la de obtener el tamaño del archivo y mostrarlo desde el método "print" de la clase "FileSystemPrinter" y ahora ese método puede llamar simplemente al método "getSize()" puesto que está implementado tanto en objetos de tipo "File" como "Directory".
+- La inversión de dependencias aún estaría por implementar a nivel práctico en ciertos puntos del programa. Es decir ya se han aislado las implementaciones de bajo nivel pero aún no se ha aplicado a ciertas funcionalidades del código.
